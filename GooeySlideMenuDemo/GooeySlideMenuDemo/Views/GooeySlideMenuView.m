@@ -114,6 +114,15 @@
      注意：直接使用self.helperSideView获取到的frame是不变的
      Presentation Layer 的作用 —— 即可以实时获取 Layer 属性的当前值。
      */
+    
+    /*
+     当你给一个 CALayer 添加动画的时候，动画其实并没有改变这个 layer 的实际属性。
+     取而代之的，系统会创建一个原始 layer 的拷贝。在文档中，苹果称这个原始 layer 为 Model Layer ，
+     而这个复制的 layer 则被称为 Presentation Layer 。 
+     Presentation Layer 的属性会随着动画的进度实时改变，
+     而 Model Layer 中对应的属性则并不会改变
+     所以如果你想要获取动画中每个时刻的状态，请使用 layer 的  presentationLayer
+     */
     CALayer *sideHelperPresentationLayer   =  (CALayer *)[self.helperSideView.layer presentationLayer];
     CALayer *centerHelperPresentationLayer =  (CALayer *)[self.helperCenderView.layer presentationLayer];
     
