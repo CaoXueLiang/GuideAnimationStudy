@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58DEA6611F6279E3000AE7FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6601F6279E3000AE7FA /* main.m */; };
+		58DEA6641F6279E3000AE7FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6631F6279E3000AE7FA /* AppDelegate.m */; };
+		58DEA6671F6279E3000AE7FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6661F6279E3000AE7FA /* ViewController.m */; };
+		58DEA66C1F6279E3000AE7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DEA66B1F6279E3000AE7FA /* Assets.xcassets */; };
+		58DEA66F1F6279E3000AE7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DEA66D1F6279E3000AE7FA /* LaunchScreen.storyboard */; };
+		58DEA67A1F6279E3000AE7FA /* BuddleTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6791F6279E3000AE7FA /* BuddleTransitionTests.m */; };
+		58DEA6851F6279E3000AE7FA /* BuddleTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6841F6279E3000AE7FA /* BuddleTransitionUITests.m */; };
+		58DEA6971F627A0F000AE7FA /* KYBubbleInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA6941F627A0F000AE7FA /* KYBubbleInteractiveTransition.m */; };
+		58DEA69B1F627CE1000AE7FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA69A1F627CE1000AE7FA /* SecondViewController.m */; };
+		58DEA6A01F6283FF000AE7FA /* SpreadTranstionAimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA69D1F6283FF000AE7FA /* SpreadTranstionAimation.m */; };
+		58DEA6A11F6283FF000AE7FA /* SpreadInvertTranslationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEA69F1F6283FF000AE7FA /* SpreadInvertTranslationAnimation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58DEA6761F6279E3000AE7FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58DEA6541F6279E2000AE7FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58DEA65B1F6279E2000AE7FA;
+			remoteInfo = BuddleTransition;
+		};
+		58DEA6811F6279E3000AE7FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58DEA6541F6279E2000AE7FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58DEA65B1F6279E2000AE7FA;
+			remoteInfo = BuddleTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58DEA65C1F6279E2000AE7FA /* BuddleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DEA6601F6279E3000AE7FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58DEA6621F6279E3000AE7FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58DEA6631F6279E3000AE7FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58DEA6651F6279E3000AE7FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		58DEA6661F6279E3000AE7FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		58DEA66B1F6279E3000AE7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58DEA66E1F6279E3000AE7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58DEA6701F6279E3000AE7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DEA6751F6279E3000AE7FA /* BuddleTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddleTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DEA6791F6279E3000AE7FA /* BuddleTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuddleTransitionTests.m; sourceTree = "<group>"; };
+		58DEA67B1F6279E3000AE7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DEA6801F6279E3000AE7FA /* BuddleTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddleTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DEA6841F6279E3000AE7FA /* BuddleTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuddleTransitionUITests.m; sourceTree = "<group>"; };
+		58DEA6861F6279E3000AE7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DEA6931F627A0F000AE7FA /* KYBubbleInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBubbleInteractiveTransition.h; sourceTree = "<group>"; };
+		58DEA6941F627A0F000AE7FA /* KYBubbleInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBubbleInteractiveTransition.m; sourceTree = "<group>"; };
+		58DEA6991F627CE1000AE7FA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		58DEA69A1F627CE1000AE7FA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		58DEA69C1F6283FF000AE7FA /* SpreadTranstionAimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadTranstionAimation.h; sourceTree = "<group>"; };
+		58DEA69D1F6283FF000AE7FA /* SpreadTranstionAimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadTranstionAimation.m; sourceTree = "<group>"; };
+		58DEA69E1F6283FF000AE7FA /* SpreadInvertTranslationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadInvertTranslationAnimation.h; sourceTree = "<group>"; };
+		58DEA69F1F6283FF000AE7FA /* SpreadInvertTranslationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadInvertTranslationAnimation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58DEA6591F6279E2000AE7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA6721F6279E3000AE7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA67D1F6279E3000AE7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58DEA6531F6279E2000AE7FA = {
+			isa = PBXGroup;
+			children = (
+				58DEA65E1F6279E3000AE7FA /* BuddleTransition */,
+				58DEA6781F6279E3000AE7FA /* BuddleTransitionTests */,
+				58DEA6831F6279E3000AE7FA /* BuddleTransitionUITests */,
+				58DEA65D1F6279E2000AE7FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58DEA65D1F6279E2000AE7FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA65C1F6279E2000AE7FA /* BuddleTransition.app */,
+				58DEA6751F6279E3000AE7FA /* BuddleTransitionTests.xctest */,
+				58DEA6801F6279E3000AE7FA /* BuddleTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58DEA65E1F6279E3000AE7FA /* BuddleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA6921F6279F3000AE7FA /* Classes */,
+				58DEA6621F6279E3000AE7FA /* AppDelegate.h */,
+				58DEA6631F6279E3000AE7FA /* AppDelegate.m */,
+				58DEA6651F6279E3000AE7FA /* ViewController.h */,
+				58DEA6661F6279E3000AE7FA /* ViewController.m */,
+				58DEA6991F627CE1000AE7FA /* SecondViewController.h */,
+				58DEA69A1F627CE1000AE7FA /* SecondViewController.m */,
+				58DEA66B1F6279E3000AE7FA /* Assets.xcassets */,
+				58DEA66D1F6279E3000AE7FA /* LaunchScreen.storyboard */,
+				58DEA6701F6279E3000AE7FA /* Info.plist */,
+				58DEA65F1F6279E3000AE7FA /* Supporting Files */,
+			);
+			path = BuddleTransition;
+			sourceTree = "<group>";
+		};
+		58DEA65F1F6279E3000AE7FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA6601F6279E3000AE7FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58DEA6781F6279E3000AE7FA /* BuddleTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA6791F6279E3000AE7FA /* BuddleTransitionTests.m */,
+				58DEA67B1F6279E3000AE7FA /* Info.plist */,
+			);
+			path = BuddleTransitionTests;
+			sourceTree = "<group>";
+		};
+		58DEA6831F6279E3000AE7FA /* BuddleTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA6841F6279E3000AE7FA /* BuddleTransitionUITests.m */,
+				58DEA6861F6279E3000AE7FA /* Info.plist */,
+			);
+			path = BuddleTransitionUITests;
+			sourceTree = "<group>";
+		};
+		58DEA6921F6279F3000AE7FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58DEA69C1F6283FF000AE7FA /* SpreadTranstionAimation.h */,
+				58DEA69D1F6283FF000AE7FA /* SpreadTranstionAimation.m */,
+				58DEA69E1F6283FF000AE7FA /* SpreadInvertTranslationAnimation.h */,
+				58DEA69F1F6283FF000AE7FA /* SpreadInvertTranslationAnimation.m */,
+				58DEA6931F627A0F000AE7FA /* KYBubbleInteractiveTransition.h */,
+				58DEA6941F627A0F000AE7FA /* KYBubbleInteractiveTransition.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58DEA65B1F6279E2000AE7FA /* BuddleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DEA6891F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransition" */;
+			buildPhases = (
+				58DEA6581F6279E2000AE7FA /* Sources */,
+				58DEA6591F6279E2000AE7FA /* Frameworks */,
+				58DEA65A1F6279E2000AE7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuddleTransition;
+			productName = BuddleTransition;
+			productReference = 58DEA65C1F6279E2000AE7FA /* BuddleTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58DEA6741F6279E3000AE7FA /* BuddleTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DEA68C1F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransitionTests" */;
+			buildPhases = (
+				58DEA6711F6279E3000AE7FA /* Sources */,
+				58DEA6721F6279E3000AE7FA /* Frameworks */,
+				58DEA6731F6279E3000AE7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58DEA6771F6279E3000AE7FA /* PBXTargetDependency */,
+			);
+			name = BuddleTransitionTests;
+			productName = BuddleTransitionTests;
+			productReference = 58DEA6751F6279E3000AE7FA /* BuddleTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58DEA67F1F6279E3000AE7FA /* BuddleTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DEA68F1F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransitionUITests" */;
+			buildPhases = (
+				58DEA67C1F6279E3000AE7FA /* Sources */,
+				58DEA67D1F6279E3000AE7FA /* Frameworks */,
+				58DEA67E1F6279E3000AE7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58DEA6821F6279E3000AE7FA /* PBXTargetDependency */,
+			);
+			name = BuddleTransitionUITests;
+			productName = BuddleTransitionUITests;
+			productReference = 58DEA6801F6279E3000AE7FA /* BuddleTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58DEA6541F6279E2000AE7FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CaoXueLiang.cn;
+				TargetAttributes = {
+					58DEA65B1F6279E2000AE7FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+					};
+					58DEA6741F6279E3000AE7FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58DEA65B1F6279E2000AE7FA;
+					};
+					58DEA67F1F6279E3000AE7FA = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 58DEA65B1F6279E2000AE7FA;
+					};
+				};
+			};
+			buildConfigurationList = 58DEA6571F6279E2000AE7FA /* Build configuration list for PBXProject "BuddleTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58DEA6531F6279E2000AE7FA;
+			productRefGroup = 58DEA65D1F6279E2000AE7FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58DEA65B1F6279E2000AE7FA /* BuddleTransition */,
+				58DEA6741F6279E3000AE7FA /* BuddleTransitionTests */,
+				58DEA67F1F6279E3000AE7FA /* BuddleTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58DEA65A1F6279E2000AE7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEA66F1F6279E3000AE7FA /* LaunchScreen.storyboard in Resources */,
+				58DEA66C1F6279E3000AE7FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA6731F6279E3000AE7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA67E1F6279E3000AE7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58DEA6581F6279E2000AE7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEA69B1F627CE1000AE7FA /* SecondViewController.m in Sources */,
+				58DEA6671F6279E3000AE7FA /* ViewController.m in Sources */,
+				58DEA6A01F6283FF000AE7FA /* SpreadTranstionAimation.m in Sources */,
+				58DEA6641F6279E3000AE7FA /* AppDelegate.m in Sources */,
+				58DEA6611F6279E3000AE7FA /* main.m in Sources */,
+				58DEA6971F627A0F000AE7FA /* KYBubbleInteractiveTransition.m in Sources */,
+				58DEA6A11F6283FF000AE7FA /* SpreadInvertTranslationAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA6711F6279E3000AE7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEA67A1F6279E3000AE7FA /* BuddleTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DEA67C1F6279E3000AE7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEA6851F6279E3000AE7FA /* BuddleTransitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58DEA6771F6279E3000AE7FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58DEA65B1F6279E2000AE7FA /* BuddleTransition */;
+			targetProxy = 58DEA6761F6279E3000AE7FA /* PBXContainerItemProxy */;
+		};
+		58DEA6821F6279E3000AE7FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58DEA65B1F6279E2000AE7FA /* BuddleTransition */;
+			targetProxy = 58DEA6811F6279E3000AE7FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58DEA66D1F6279E3000AE7FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58DEA66E1F6279E3000AE7FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58DEA6871F6279E3000AE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58DEA6881F6279E3000AE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58DEA68A1F6279E3000AE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58DEA68B1F6279E3000AE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58DEA68D1F6279E3000AE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddleTransition.app/BuddleTransition";
+			};
+			name = Debug;
+		};
+		58DEA68E1F6279E3000AE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddleTransition.app/BuddleTransition";
+			};
+			name = Release;
+		};
+		58DEA6901F6279E3000AE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuddleTransition;
+			};
+			name = Debug;
+		};
+		58DEA6911F6279E3000AE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = BuddleTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.BuddleTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuddleTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58DEA6571F6279E2000AE7FA /* Build configuration list for PBXProject "BuddleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEA6871F6279E3000AE7FA /* Debug */,
+				58DEA6881F6279E3000AE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DEA6891F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEA68A1F6279E3000AE7FA /* Debug */,
+				58DEA68B1F6279E3000AE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DEA68C1F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEA68D1F6279E3000AE7FA /* Debug */,
+				58DEA68E1F6279E3000AE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DEA68F1F6279E3000AE7FA /* Build configuration list for PBXNativeTarget "BuddleTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEA6901F6279E3000AE7FA /* Debug */,
+				58DEA6911F6279E3000AE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58DEA6541F6279E2000AE7FA /* Project object */;
+}
