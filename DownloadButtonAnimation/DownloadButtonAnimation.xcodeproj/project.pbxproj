@@ -532,6 +532,7 @@
 				58DEA7191F629F5A000AE7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58DEA71A1F629F5A000AE7FA /* Build configuration list for PBXNativeTarget "DownloadButtonAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				58DEA71C1F629F5A000AE7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58DEA71D1F629F5A000AE7FA /* Build configuration list for PBXNativeTarget "DownloadButtonAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +550,7 @@
 				58DEA71F1F629F5A000AE7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
