@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		584867351F6698A6001D4716 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 584867341F6698A6001D4716 /* main.m */; };
+		584867381F6698A6001D4716 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 584867371F6698A6001D4716 /* AppDelegate.m */; };
+		5848673B1F6698A6001D4716 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5848673A1F6698A6001D4716 /* ViewController.m */; };
+		5848673E1F6698A6001D4716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5848673C1F6698A6001D4716 /* Main.storyboard */; };
+		584867401F6698A6001D4716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5848673F1F6698A6001D4716 /* Assets.xcassets */; };
+		584867431F6698A6001D4716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584867411F6698A6001D4716 /* LaunchScreen.storyboard */; };
+		5848674E1F6698A6001D4716 /* tvOSCardAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5848674D1F6698A6001D4716 /* tvOSCardAnimationTests.m */; };
+		584867591F6698A6001D4716 /* tvOSCardAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 584867581F6698A6001D4716 /* tvOSCardAnimationUITests.m */; };
+		584867691F6698F8001D4716 /* tVOSCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584867681F6698F8001D4716 /* tVOSCardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5848674A1F6698A6001D4716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 584867281F6698A6001D4716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5848672F1F6698A6001D4716;
+			remoteInfo = tvOSCardAnimation;
+		};
+		584867551F6698A6001D4716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 584867281F6698A6001D4716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5848672F1F6698A6001D4716;
+			remoteInfo = tvOSCardAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		584867301F6698A6001D4716 /* tvOSCardAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSCardAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		584867341F6698A6001D4716 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		584867361F6698A6001D4716 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		584867371F6698A6001D4716 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		584867391F6698A6001D4716 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5848673A1F6698A6001D4716 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5848673D1F6698A6001D4716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5848673F1F6698A6001D4716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		584867421F6698A6001D4716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		584867441F6698A6001D4716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584867491F6698A6001D4716 /* tvOSCardAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCardAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5848674D1F6698A6001D4716 /* tvOSCardAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tvOSCardAnimationTests.m; sourceTree = "<group>"; };
+		5848674F1F6698A6001D4716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584867541F6698A6001D4716 /* tvOSCardAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCardAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		584867581F6698A6001D4716 /* tvOSCardAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tvOSCardAnimationUITests.m; sourceTree = "<group>"; };
+		5848675A1F6698A6001D4716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		584867671F6698F8001D4716 /* tVOSCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tVOSCardView.h; sourceTree = "<group>"; };
+		584867681F6698F8001D4716 /* tVOSCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tVOSCardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5848672D1F6698A6001D4716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867461F6698A6001D4716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867511F6698A6001D4716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		584867271F6698A6001D4716 = {
+			isa = PBXGroup;
+			children = (
+				584867321F6698A6001D4716 /* tvOSCardAnimation */,
+				5848674C1F6698A6001D4716 /* tvOSCardAnimationTests */,
+				584867571F6698A6001D4716 /* tvOSCardAnimationUITests */,
+				584867311F6698A6001D4716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		584867311F6698A6001D4716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				584867301F6698A6001D4716 /* tvOSCardAnimation.app */,
+				584867491F6698A6001D4716 /* tvOSCardAnimationTests.xctest */,
+				584867541F6698A6001D4716 /* tvOSCardAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		584867321F6698A6001D4716 /* tvOSCardAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				584867661F6698AC001D4716 /* Class */,
+				584867361F6698A6001D4716 /* AppDelegate.h */,
+				584867371F6698A6001D4716 /* AppDelegate.m */,
+				584867391F6698A6001D4716 /* ViewController.h */,
+				5848673A1F6698A6001D4716 /* ViewController.m */,
+				5848673C1F6698A6001D4716 /* Main.storyboard */,
+				5848673F1F6698A6001D4716 /* Assets.xcassets */,
+				584867411F6698A6001D4716 /* LaunchScreen.storyboard */,
+				584867441F6698A6001D4716 /* Info.plist */,
+				584867331F6698A6001D4716 /* Supporting Files */,
+			);
+			path = tvOSCardAnimation;
+			sourceTree = "<group>";
+		};
+		584867331F6698A6001D4716 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				584867341F6698A6001D4716 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5848674C1F6698A6001D4716 /* tvOSCardAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5848674D1F6698A6001D4716 /* tvOSCardAnimationTests.m */,
+				5848674F1F6698A6001D4716 /* Info.plist */,
+			);
+			path = tvOSCardAnimationTests;
+			sourceTree = "<group>";
+		};
+		584867571F6698A6001D4716 /* tvOSCardAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				584867581F6698A6001D4716 /* tvOSCardAnimationUITests.m */,
+				5848675A1F6698A6001D4716 /* Info.plist */,
+			);
+			path = tvOSCardAnimationUITests;
+			sourceTree = "<group>";
+		};
+		584867661F6698AC001D4716 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				584867671F6698F8001D4716 /* tVOSCardView.h */,
+				584867681F6698F8001D4716 /* tVOSCardView.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5848672F1F6698A6001D4716 /* tvOSCardAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5848675D1F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimation" */;
+			buildPhases = (
+				5848672C1F6698A6001D4716 /* Sources */,
+				5848672D1F6698A6001D4716 /* Frameworks */,
+				5848672E1F6698A6001D4716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOSCardAnimation;
+			productName = tvOSCardAnimation;
+			productReference = 584867301F6698A6001D4716 /* tvOSCardAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		584867481F6698A6001D4716 /* tvOSCardAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584867601F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimationTests" */;
+			buildPhases = (
+				584867451F6698A6001D4716 /* Sources */,
+				584867461F6698A6001D4716 /* Frameworks */,
+				584867471F6698A6001D4716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5848674B1F6698A6001D4716 /* PBXTargetDependency */,
+			);
+			name = tvOSCardAnimationTests;
+			productName = tvOSCardAnimationTests;
+			productReference = 584867491F6698A6001D4716 /* tvOSCardAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		584867531F6698A6001D4716 /* tvOSCardAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 584867631F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimationUITests" */;
+			buildPhases = (
+				584867501F6698A6001D4716 /* Sources */,
+				584867511F6698A6001D4716 /* Frameworks */,
+				584867521F6698A6001D4716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				584867561F6698A6001D4716 /* PBXTargetDependency */,
+			);
+			name = tvOSCardAnimationUITests;
+			productName = tvOSCardAnimationUITests;
+			productReference = 584867541F6698A6001D4716 /* tvOSCardAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		584867281F6698A6001D4716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CaoXueLiang.cn;
+				TargetAttributes = {
+					5848672F1F6698A6001D4716 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+					};
+					584867481F6698A6001D4716 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5848672F1F6698A6001D4716;
+					};
+					584867531F6698A6001D4716 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49YMBTW8W3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5848672F1F6698A6001D4716;
+					};
+				};
+			};
+			buildConfigurationList = 5848672B1F6698A6001D4716 /* Build configuration list for PBXProject "tvOSCardAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 584867271F6698A6001D4716;
+			productRefGroup = 584867311F6698A6001D4716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5848672F1F6698A6001D4716 /* tvOSCardAnimation */,
+				584867481F6698A6001D4716 /* tvOSCardAnimationTests */,
+				584867531F6698A6001D4716 /* tvOSCardAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5848672E1F6698A6001D4716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584867431F6698A6001D4716 /* LaunchScreen.storyboard in Resources */,
+				584867401F6698A6001D4716 /* Assets.xcassets in Resources */,
+				5848673E1F6698A6001D4716 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867471F6698A6001D4716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867521F6698A6001D4716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5848672C1F6698A6001D4716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5848673B1F6698A6001D4716 /* ViewController.m in Sources */,
+				584867381F6698A6001D4716 /* AppDelegate.m in Sources */,
+				584867691F6698F8001D4716 /* tVOSCardView.m in Sources */,
+				584867351F6698A6001D4716 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867451F6698A6001D4716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5848674E1F6698A6001D4716 /* tvOSCardAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		584867501F6698A6001D4716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584867591F6698A6001D4716 /* tvOSCardAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5848674B1F6698A6001D4716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5848672F1F6698A6001D4716 /* tvOSCardAnimation */;
+			targetProxy = 5848674A1F6698A6001D4716 /* PBXContainerItemProxy */;
+		};
+		584867561F6698A6001D4716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5848672F1F6698A6001D4716 /* tvOSCardAnimation */;
+			targetProxy = 584867551F6698A6001D4716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5848673C1F6698A6001D4716 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5848673D1F6698A6001D4716 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		584867411F6698A6001D4716 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				584867421F6698A6001D4716 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5848675B1F6698A6001D4716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5848675C1F6698A6001D4716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5848675E1F6698A6001D4716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5848675F1F6698A6001D4716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		584867611F6698A6001D4716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCardAnimation.app/tvOSCardAnimation";
+			};
+			name = Debug;
+		};
+		584867621F6698A6001D4716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCardAnimation.app/tvOSCardAnimation";
+			};
+			name = Release;
+		};
+		584867641F6698A6001D4716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tvOSCardAnimation;
+			};
+			name = Debug;
+		};
+		584867651F6698A6001D4716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49YMBTW8W3;
+				INFOPLIST_FILE = tvOSCardAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ovov.tvOSCardAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tvOSCardAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5848672B1F6698A6001D4716 /* Build configuration list for PBXProject "tvOSCardAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5848675B1F6698A6001D4716 /* Debug */,
+				5848675C1F6698A6001D4716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5848675D1F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5848675E1F6698A6001D4716 /* Debug */,
+				5848675F1F6698A6001D4716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		584867601F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584867611F6698A6001D4716 /* Debug */,
+				584867621F6698A6001D4716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		584867631F6698A6001D4716 /* Build configuration list for PBXNativeTarget "tvOSCardAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				584867641F6698A6001D4716 /* Debug */,
+				584867651F6698A6001D4716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 584867281F6698A6001D4716 /* Project object */;
+}
