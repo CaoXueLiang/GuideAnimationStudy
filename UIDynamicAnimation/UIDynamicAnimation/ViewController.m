@@ -97,7 +97,10 @@
 - (void)panOnIt:(UIPanGestureRecognizer *)recognizer{
    CGPoint location = CGPointMake(CGRectGetMidX(_lockScreenView.frame), [recognizer locationInView:self.view].y);
     if (recognizer.state == UIGestureRecognizerStateBegan) {
-        //添加吸附行为
+        /*
+         添加吸附行为
+         其实就是视图的锚点(anchorPoint) 和指定的点始终保持length的距离
+         */
         [self.animator removeBehavior:self.gravityBehavior];
         self.attachmentBehaviour = [[UIAttachmentBehavior alloc]initWithItem:self.lockScreenView attachedToAnchor:location];
         [self.animator addBehavior:_attachmentBehaviour];
