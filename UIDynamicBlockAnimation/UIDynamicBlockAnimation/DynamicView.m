@@ -92,7 +92,10 @@
     [_animator addBehavior:_viewsGravity];
     
     __weak typeof(self) weakSelf = self;
-    //在动画的每一步调用
+    /*
+     在动画的每一步调用，
+     任何一个UIDynamicBehavior都能够实时调用这个action
+     */
     _viewsGravity.action = ^{
         NSLog(@"acting");
         UIBezierPath *bezierPath = [UIBezierPath bezierPath];
