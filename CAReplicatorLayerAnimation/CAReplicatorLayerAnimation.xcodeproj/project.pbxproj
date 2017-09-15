@@ -16,6 +16,9 @@
 		580F67A81F6A753A008B7EDD /* CAReplicatorLayerAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F67A71F6A753A008B7EDD /* CAReplicatorLayerAnimationTests.m */; };
 		580F67B31F6A753A008B7EDD /* CAReplicatorLayerAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F67B21F6A753A008B7EDD /* CAReplicatorLayerAnimationUITests.m */; };
 		580F67C31F6A7670008B7EDD /* ReplicatorLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F67C21F6A7670008B7EDD /* ReplicatorLoader.m */; };
+		587AE4781F6BB87A00F5AF92 /* ReplicatorCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587AE4771F6BB87A00F5AF92 /* ReplicatorCircleView.m */; };
+		587AE47B1F6BBC7700F5AF92 /* ReflectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587AE47A1F6BBC7700F5AF92 /* ReflectView.m */; };
+		587AE4821F6BC59500F5AF92 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587AE4811F6BC59500F5AF92 /* ReflectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		580F67B41F6A753A008B7EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		580F67C11F6A7670008B7EDD /* ReplicatorLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLoader.h; sourceTree = "<group>"; };
 		580F67C21F6A7670008B7EDD /* ReplicatorLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLoader.m; sourceTree = "<group>"; };
+		587AE4761F6BB87A00F5AF92 /* ReplicatorCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorCircleView.h; sourceTree = "<group>"; };
+		587AE4771F6BB87A00F5AF92 /* ReplicatorCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorCircleView.m; sourceTree = "<group>"; };
+		587AE4791F6BBC7700F5AF92 /* ReflectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectView.h; sourceTree = "<group>"; };
+		587AE47A1F6BBC7700F5AF92 /* ReflectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectView.m; sourceTree = "<group>"; };
+		587AE4801F6BC59500F5AF92 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		587AE4811F6BC59500F5AF92 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,12 @@
 			children = (
 				580F67C11F6A7670008B7EDD /* ReplicatorLoader.h */,
 				580F67C21F6A7670008B7EDD /* ReplicatorLoader.m */,
+				587AE4761F6BB87A00F5AF92 /* ReplicatorCircleView.h */,
+				587AE4771F6BB87A00F5AF92 /* ReplicatorCircleView.m */,
+				587AE4791F6BBC7700F5AF92 /* ReflectView.h */,
+				587AE47A1F6BBC7700F5AF92 /* ReflectView.m */,
+				587AE4801F6BC59500F5AF92 /* ReflectionView.h */,
+				587AE4811F6BC59500F5AF92 /* ReflectionView.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -289,6 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587AE47B1F6BBC7700F5AF92 /* ReflectView.m in Sources */,
+				587AE4821F6BC59500F5AF92 /* ReflectionView.m in Sources */,
+				587AE4781F6BB87A00F5AF92 /* ReplicatorCircleView.m in Sources */,
 				580F67951F6A753A008B7EDD /* ViewController.m in Sources */,
 				580F67C31F6A7670008B7EDD /* ReplicatorLoader.m in Sources */,
 				580F67921F6A753A008B7EDD /* AppDelegate.m in Sources */,
@@ -532,6 +550,7 @@
 				580F67B91F6A753A008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		580F67BA1F6A753A008B7EDD /* Build configuration list for PBXNativeTarget "CAReplicatorLayerAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +559,7 @@
 				580F67BC1F6A753A008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		580F67BD1F6A753A008B7EDD /* Build configuration list for PBXNativeTarget "CAReplicatorLayerAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +568,7 @@
 				580F67BF1F6A753A008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
