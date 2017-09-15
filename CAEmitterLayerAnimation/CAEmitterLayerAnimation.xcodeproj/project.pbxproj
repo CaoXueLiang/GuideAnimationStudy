@@ -15,6 +15,7 @@
 		580F675E1F6A5AAF008B7EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580F675C1F6A5AAF008B7EDD /* LaunchScreen.storyboard */; };
 		580F67691F6A5AAF008B7EDD /* CAEmitterLayerAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F67681F6A5AAF008B7EDD /* CAEmitterLayerAnimationTests.m */; };
 		580F67741F6A5AAF008B7EDD /* CAEmitterLayerAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F67731F6A5AAF008B7EDD /* CAEmitterLayerAnimationUITests.m */; };
+		C3EC39401F6C0D4700D5D838 /* FireWorkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EC393F1F6C0D4700D5D838 /* FireWorkButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		580F676F1F6A5AAF008B7EDD /* CAEmitterLayerAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAEmitterLayerAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580F67731F6A5AAF008B7EDD /* CAEmitterLayerAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerAnimationUITests.m; sourceTree = "<group>"; };
 		580F67751F6A5AAF008B7EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EC393E1F6C0D4700D5D838 /* FireWorkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireWorkButton.h; sourceTree = "<group>"; };
+		C3EC393F1F6C0D4700D5D838 /* FireWorkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireWorkButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				580F67511F6A5AAF008B7EDD /* AppDelegate.h */,
 				580F67521F6A5AAF008B7EDD /* AppDelegate.m */,
+				C3EC393E1F6C0D4700D5D838 /* FireWorkButton.h */,
+				C3EC393F1F6C0D4700D5D838 /* FireWorkButton.m */,
 				580F67541F6A5AAF008B7EDD /* ViewController.h */,
 				580F67551F6A5AAF008B7EDD /* ViewController.m */,
 				580F67571F6A5AAF008B7EDD /* Main.storyboard */,
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EC39401F6C0D4700D5D838 /* FireWorkButton.m in Sources */,
 				580F67561F6A5AAF008B7EDD /* ViewController.m in Sources */,
 				580F67531F6A5AAF008B7EDD /* AppDelegate.m in Sources */,
 				580F67501F6A5AAF008B7EDD /* main.m in Sources */,
@@ -518,6 +524,7 @@
 				580F677A1F6A5AAF008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		580F677B1F6A5AAF008B7EDD /* Build configuration list for PBXNativeTarget "CAEmitterLayerAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				580F677D1F6A5AAF008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		580F677E1F6A5AAF008B7EDD /* Build configuration list for PBXNativeTarget "CAEmitterLayerAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +542,7 @@
 				580F67801F6A5AAF008B7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,18 +7,21 @@
 //
 
 #import "ViewController.h"
+#import "FireWorkButton.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) CAEmitterLayer *emitterLayer;
+@property (nonatomic,strong) FireWorkButton *fireButton;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:149/255.0 green:170/255.0 blue:211/255.0 alpha:1];
+    self.view.backgroundColor = [UIColor whiteColor];
     //[self addEmitter];
     [self addStarEmitter];
+    [self addFireButton];
 }
 
 /*
@@ -79,7 +82,7 @@
     
     //设置CAEmitterLayer
     _emitterLayer.renderMode = kCAEmitterLayerAdditive;
-    _emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+    _emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds), 150);
     
     //创建粒子模板
     CAEmitterCell *emitterCell = [[CAEmitterCell alloc]init];
@@ -116,6 +119,11 @@
     
     //将粒子添加到发射器上
     _emitterLayer.emitterCells = @[emitterCell];
+}
+
+- (void)addFireButton{
+    _fireButton = [[FireWorkButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetHeight(self.view.bounds)/2 + 150, 30, 30) normalImage:@"Like" selectedImage:@"Like-Blue"];
+    [self.view addSubview:_fireButton];
 }
 
 @end
