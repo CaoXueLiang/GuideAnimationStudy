@@ -28,8 +28,6 @@
         }else if (type == LoaderTypeGrid){
             [self setGridReplicator];
             
-        }else if (type == LoaderTypeReflect){
-           
         }
     }
     return self;
@@ -158,7 +156,5 @@
     group.autoreverses = YES;
     return group;
 }
-
-//https://github.com/nicklockwood/ReflectionView
 
 @end
