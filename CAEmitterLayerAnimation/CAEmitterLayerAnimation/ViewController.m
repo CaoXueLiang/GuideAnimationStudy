@@ -71,6 +71,7 @@
     
     _emitterLayer.emitterCells = @[emitterCell];
     [self.view.layer insertSublayer:self.emitterLayer atIndex:0];
+    
 }
 
 - (void)addStarEmitter{
