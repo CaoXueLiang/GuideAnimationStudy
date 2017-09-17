@@ -19,62 +19,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    //[self addEmitter];
+    //[self snowEmitter];
     [self addStarEmitter];
     [self addFireButton];
+    //[self fireworkEmitter];
 }
 
-/*
- CAEMitterCell的属性基本上可以分为三种：
- 1.这种粒子的某一属性的初始值。比如，color属性指定了一个可以混合图片内容颜色的混合色。在示例中，我们将它设置为桔色。
- 2.粒子某一属性的变化范围。比如emissionRange属性的值是2π，这意味着例子可以从360度任意位置反射出来。如果指定一个小一些的值，就可以创造出一个圆锥形
- 3.指定值在时间线上的变化。比如，在示例中，我们将alphaSpeed设置为-0.4，就是说例子的透明度每过一秒就是减少0.4，这样就有发射出去之后逐渐小时的效果
- 4.preservesDepth，是否将3D例子系统平面化到一个图层（默认值）或者可以在3D空间中混合其他的图层
- 5.renderMode，控制着在视觉上粒子图片是如何混合的。你可能已经注意到了示例中我们把它设置为kCAEmitterLayerAdditive，它实现了这样一个效果：合并例子重叠部分的亮度使得看上去更亮。如果我们把它设置为默认的kCAEmitterLayerUnordered，效果就没那么好看了
+
+/**
+ 雪花飘落
  */
-- (void)addEmitter{
-    _emitterLayer = [CAEmitterLayer layer];
-    //粒子发射的中心点默认是（0，0）
-    _emitterLayer.emitterPosition = CGPointMake(self.view.bounds.size.width/2, 100);
-    
-    //发射形状的大小
-    _emitterLayer.emitterSize  = CGSizeMake(CGRectGetWidth(self.view.bounds)*2, 0);
-    _emitterLayer.emitterShape = kCAEmitterLayerPoint;
-    _emitterLayer.emitterMode = kCAEmitterLayerOutline;
-    _emitterLayer.renderMode = kCAEmitterLayerAdditive;
-    _emitterLayer.shadowOpacity = 1.0;
-    _emitterLayer.shadowOffset = CGSizeMake(0, 1);
-    _emitterLayer.shadowRadius = 0;
-    _emitterLayer.shadowColor = [UIColor whiteColor].CGColor;
+- (void)snowEmitter{
+    //创建粒子发射器
+    CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
+    emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds),-10);
+    emitterLayer.emitterSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 0);
+    emitterLayer.emitterShape = kCAEmitterLayerLine;
+    emitterLayer.emitterMode = kCAEmitterLayerOutline;
     
     
-    //创建粒子模板
-    CAEmitterCell *emitterCell = [CAEmitterCell emitterCell];
-    //每秒产生多少个粒子对象
-    emitterCell.birthRate = 1;
-    //粒子对象的寿命
-    emitterCell.lifetime = 120;
-    //每个粒子的初始速度
-    emitterCell.velocity = -10;
-    //速度变化范围
-    emitterCell.velocityRange = 10;
-    //Y轴的加速度
-    emitterCell.yAcceleration = 2;
-    //粒子发射角度
-    emitterCell.emissionRange =2*M_PI;
-    //在生命周期中可以旋转的角度范围
-    emitterCell.spinRange = 0.25*M_PI;
-    emitterCell.contents = (__bridge id)([UIImage imageNamed:@"snow"].CGImage);
-    //每一个发射的粒子的颜色平均值
-    emitterCell.color = [[UIColor colorWithRed:0.600 green:0.658 blue:0.743 alpha:1.000] CGColor];
-    emitterCell.alphaSpeed = -0.05;
+    //创建粒子模型
+    CAEmitterCell *cell = [CAEmitterCell emitterCell];
+    cell.birthRate = 3;
+    cell.lifetime = 100;
+    cell.contents = (__bridge id)[UIImage imageNamed:@"snow"].CGImage;
+    cell.color = [[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1.0] CGColor];
+    cell.velocity = 10;
+    cell.velocityRange = 10;
+    cell.yAcceleration = 5;
+    cell.redRange = 0.8;
+    cell.blueRange = 0.8;
+    cell.greenRange = 0.8;
+    cell.spin = M_PI/2;
+    cell.spinRange = M_PI/4;
+    cell.emissionRange = M_PI_2;
     
-    _emitterLayer.emitterCells = @[emitterCell];
-    [self.view.layer insertSublayer:self.emitterLayer atIndex:0];
+    emitterLayer.emitterCells = @[cell];
+    [self.view.layer addSublayer:emitterLayer];
     
 }
 
+
+/**
+ 粒子发射动画
+ */
 - (void)addStarEmitter{
+    self.view.backgroundColor = [UIColor blackColor];
     //创建粒子发射器
     _emitterLayer = [CAEmitterLayer layer];
     _emitterLayer.masksToBounds = YES;
@@ -83,7 +73,7 @@
     
     //设置CAEmitterLayer
     _emitterLayer.renderMode = kCAEmitterLayerAdditive;
-    _emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds), 150);
+    _emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds)+50, 150);
     
     //创建粒子模板
     CAEmitterCell *emitterCell = [[CAEmitterCell alloc]init];
@@ -100,7 +90,7 @@
     emitterCell.alphaSpeed = -0.5;
     
     emitterCell.scale = 1;
-    emitterCell.scaleRange = 0;
+    emitterCell.scaleRange = 0.2;
     emitterCell.scaleSpeed = 0.1;
     
     emitterCell.spin = 130*M_PI/180.0;;
@@ -112,7 +102,7 @@
     
     emitterCell.lifetime = 1;
     emitterCell.lifetimeRange = 0;
-    emitterCell.birthRate = 250;
+    emitterCell.birthRate = 200;
     emitterCell.velocity = 50;
     emitterCell.velocityRange = 500;
     emitterCell.xAcceleration = -750;
@@ -122,6 +112,63 @@
     _emitterLayer.emitterCells = @[emitterCell];
 }
 
+
+/**
+ 烟花效果
+ */
+- (void)fireworkEmitter{
+    CGFloat rocketLifeTime = 1.0;
+    //创建粒子发射器
+    CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
+    emitterLayer.emitterPosition = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    emitterLayer.emitterSize = CGSizeMake(CGRectGetWidth(self.view.bounds), 0);
+    emitterLayer.emitterShape = kCAEmitterLayerLine;
+    emitterLayer.emitterMode = kCAEmitterLayerOutline;
+    emitterLayer.renderMode = kCAEmitterLayerAdditive;
+    
+    //创建粒子模板(发射阶段)
+    CAEmitterCell *rocket = [CAEmitterCell emitterCell];
+    rocket.contents = (__bridge id)[UIImage imageNamed:@"小圆球"].CGImage;
+    rocket.color = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1].CGColor;
+    rocket.scale = 0.5;
+    rocket.redRange = 0.7;
+    rocket.greenRange = 0.7;
+    rocket.birthRate = 1;
+    rocket.lifetime = rocketLifeTime + 0.02;
+    rocket.velocity = 500;
+    rocket.velocityRange = 100;
+    rocket.yAcceleration = 75;
+    rocket.emissionRange = M_PI_4;
+
+    
+    //创建粒子模板(爆炸阶段)
+    CAEmitterCell *spark = [CAEmitterCell emitterCell];
+    spark.birthRate = 10000;
+    spark.scale = 0.6;
+    spark.velocity = 125;
+    spark.emissionRange = 2* M_PI;
+    spark.yAcceleration = 75;
+    spark.lifetime = 2;
+    spark.contents = (id)[[UIImage imageNamed:@"星"] CGImage];
+    spark.scaleSpeed = -0.2;
+    spark.greenRange = 0.4;
+    spark.redRange = 0.7;
+    spark.blueRange = 0.9;
+    spark.alphaSpeed =-0.25;
+    spark.spin = 2* M_PI;
+    spark.spinRange = M_PI;
+    spark.beginTime = rocketLifeTime;
+    
+
+    emitterLayer.emitterCells = @[rocket];
+    rocket.emitterCells = @[spark];
+    [self.view.layer addSublayer:emitterLayer];
+}
+
+
+/**
+ 点击按钮爆炸动画
+ */
 - (void)addFireButton{
     _fireButton = [[FireWorkButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetHeight(self.view.bounds)/2 + 150, 30, 30) normalImage:@"Like" selectedImage:@"Like-Blue"];
     [self.view addSubview:_fireButton];
