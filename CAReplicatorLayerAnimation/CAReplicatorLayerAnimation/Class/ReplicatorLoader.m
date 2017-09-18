@@ -28,7 +28,13 @@
         }else if (type == LoaderTypeGrid){
             [self setGridReplicator];
             
+        }else if (type == LoaderTypeCirlce){
+            [self setUpCircleReplicator];
+            
+        }else if (type == LoaderTypeTriangle){
+            [self setTriangleReplicator];
         }
+        
     }
     return self;
 }
@@ -58,6 +64,50 @@
     
     [replicator addSublayer:circleLayer];
     
+    [self.layer addSublayer:replicator];
+}
+
+- (void)setUpCircleReplicator{
+    CGFloat margin = 5;
+    CGFloat radius = (CGRectGetWidth(self.bounds) - 2*margin)/3.0;
+    CALayer *circleLayer = [CALayer layer];
+    circleLayer.frame = CGRectMake(0, CGRectGetWidth(self.bounds)/2 - radius/2.0, radius, radius);
+    circleLayer.cornerRadius = radius/2.0;
+    circleLayer.masksToBounds = YES;
+    circleLayer.backgroundColor = [UIColor redColor].CGColor;
+    [circleLayer addAnimation:[self circleAnimation] forKey:@"circleAnimation"];
+    
+    CAReplicatorLayer *replocator = [CAReplicatorLayer layer];
+    replocator.frame = self.bounds;
+    replocator.instanceCount = 3;
+    replocator.instanceDelay = 0.2;
+    replocator.instanceTransform = CATransform3DMakeTranslation(radius + margin, 0, 0);
+    
+    [replocator addSublayer:circleLayer];
+    [self.layer addSublayer:replocator];
+}
+
+- (void)setTriangleReplicator{
+    CGFloat margin = 30;
+    CGFloat radirous  = (CGRectGetWidth(self.bounds) - margin)/2.0;
+    
+    CALayer *circleLayer = [CALayer layer];
+    circleLayer.frame = CGRectMake(0, CGRectGetWidth(self.bounds)/2 - radirous/2, radirous, radirous);
+    circleLayer.backgroundColor = [UIColor redColor].CGColor;
+    circleLayer.cornerRadius = radirous/2.0;
+    circleLayer.masksToBounds = YES;
+    [circleLayer addAnimation:[self triangleAnimationMagrin:margin radius:radirous] forKey:@"triangleAnimation"];
+    
+    CAReplicatorLayer *replicator = [CAReplicatorLayer layer];
+    replicator.frame = self.bounds;
+    replicator.instanceCount = 3;
+    replicator.instanceDelay = 0.2;
+    CATransform3D transform = CATransform3DIdentity;
+    transform = CATransform3DRotate(transform, M_PI*2/3.0, 0, 0,1);
+    replicator.instanceTransform = transform;
+    
+    replicator.backgroundColor = [UIColor yellowColor].CGColor;
+    [replicator addSublayer:circleLayer];
     [self.layer addSublayer:replicator];
 }
 
@@ -129,6 +179,19 @@
     return groupAnimation;
 }
 
+- (CABasicAnimation *)circleAnimation{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    CATransform3D transform = CATransform3DIdentity;
+    CATransform3D transform1 = CATransform3DScale(transform, 1, 1, 0);
+    CATransform3D transform2 = CATransform3DScale(transform, 0.3, 0.3, 0);
+    animation.fromValue = [NSValue valueWithCATransform3D:transform1];
+    animation.toValue = [NSValue valueWithCATransform3D:transform2];
+    animation.repeatCount = HUGE;
+    animation.autoreverses = YES;
+    animation.duration = 0.6;
+    return animation;
+}
+
 - (CABasicAnimation *)dotsAnimation{
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
     animation.fromValue = @0;
@@ -155,6 +218,19 @@
     group.repeatCount = HUGE;
     group.autoreverses = YES;
     return group;
+}
+
+- (CABasicAnimation *)triangleAnimationTransX:(CGFloat)lenght{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    CATransform3D transform = CATransform3DIdentity;
+    transform = CATransform3DTranslate(transform, lenght, 0, 0);
+    transform = CATransform3DRotate(transform,M_PI*2/3.0, 0, 0, 1);
+    animation.toValue = [NSValue valueWithCATransform3D:transform];
+    animation.duration = 0.6;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.repeatCount = HUGE;
+    return animation;
+    
 }
 
 @end

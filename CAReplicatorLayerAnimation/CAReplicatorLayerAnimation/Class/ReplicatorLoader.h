@@ -10,8 +10,10 @@
 
 typedef NS_ENUM(NSInteger ,LoaderType) {
      LoaderTypePulse,
+     LoaderTypeCirlce,
      LoaderTypeDots,
      LoaderTypeGrid,
+     LoaderTypeTriangle,
 };
 
 @interface ReplicatorLoader : UIView

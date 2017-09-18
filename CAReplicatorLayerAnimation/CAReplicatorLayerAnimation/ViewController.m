@@ -23,15 +23,21 @@
     CGFloat WIDTH = CGRectGetWidth(self.view.bounds);
     CGFloat HEIGHT = CGRectGetHeight(self.view.bounds);
     
-    ReplicatorLoader *pulseLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT/2-50, 100, 100) Type:LoaderTypePulse];
-    [self.view addSubview:pulseLoader];
+//    ReplicatorLoader *pulseLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT/2-50, 100, 100) Type:LoaderTypePulse];
+//    [self.view addSubview:pulseLoader];
+//    
+//    ReplicatorLoader *dotsLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, 100, 100, 100) Type:LoaderTypeDots];
+//    [self.view addSubview:dotsLoader];
+//    
+//    ReplicatorLoader *girdLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT - 200, 100, 100) Type:LoaderTypeGrid];
+//    [self.view addSubview:girdLoader];
     
-    ReplicatorLoader *dotsLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, 100, 100, 100) Type:LoaderTypeDots];
-    [self.view addSubview:dotsLoader];
+    ReplicatorLoader *trisLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, 100, 100, 100) Type:LoaderTypeTriangle];
+
+    [self.view addSubview:trisLoader];
     
-    ReplicatorLoader *girdLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT - 200, 100, 100) Type:LoaderTypeGrid];
-    [self.view addSubview:girdLoader];
-    
+//    ReplicatorLoader *circleLoader = [[ReplicatorLoader alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT - 200, 100, 100) Type:LoaderTypeCirlce];
+//    [self.view addSubview:circleLoader];
     
     //圆环动画
     /*ReplicatorCircleView *circleView = [[ReplicatorCircleView alloc]initWithFrame:CGRectMake(WIDTH/2-50, HEIGHT/2-50, 100, 100)];
