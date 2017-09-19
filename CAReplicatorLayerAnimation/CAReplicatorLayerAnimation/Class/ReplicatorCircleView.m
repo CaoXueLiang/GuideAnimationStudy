@@ -7,7 +7,6 @@
 //
 
 #import "ReplicatorCircleView.h"
-
 @implementation ReplicatorCircleView
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];

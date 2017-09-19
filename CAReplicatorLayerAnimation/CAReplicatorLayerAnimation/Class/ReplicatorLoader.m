@@ -88,28 +88,29 @@
 }
 
 - (void)setTriangleReplicator{
-    CGFloat margin = 30;
-    CGFloat radirous  = (CGRectGetWidth(self.bounds) - margin)/2.0;
+    CGFloat radius = 100/4;
+    CGFloat transX = 100 - radius;
+    CAShapeLayer *shape = [CAShapeLayer layer];
+    shape.frame = CGRectMake(0, 0, radius, radius);
+    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shape.strokeColor = [UIColor redColor].CGColor;
+    shape.fillColor = [UIColor redColor].CGColor;
+    shape.lineWidth = 1;
+    [shape addAnimation:[self rotationAnimation:transX] forKey:@"triangleAnimation"];
     
-    CALayer *circleLayer = [CALayer layer];
-    circleLayer.frame = CGRectMake(0, CGRectGetWidth(self.bounds)/2 - radirous/2, radirous, radirous);
-    circleLayer.backgroundColor = [UIColor redColor].CGColor;
-    circleLayer.cornerRadius = radirous/2.0;
-    circleLayer.masksToBounds = YES;
-    [circleLayer addAnimation:[self triangleAnimationMagrin:margin radius:radirous] forKey:@"triangleAnimation"];
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.frame = CGRectMake(0, 0, radius, radius);
+    replicatorLayer.instanceDelay = 0.0;
+    replicatorLayer.instanceCount = 3;
+    CATransform3D trans3D = CATransform3DIdentity;
+    trans3D = CATransform3DTranslate(trans3D, transX, 0, 0);
+    trans3D = CATransform3DRotate(trans3D, 120.0*M_PI/180.0, 0.0, 0.0, 1.0);
+    replicatorLayer.instanceTransform = trans3D;
+    [replicatorLayer addSublayer:shape];
     
-    CAReplicatorLayer *replicator = [CAReplicatorLayer layer];
-    replicator.frame = self.bounds;
-    replicator.instanceCount = 3;
-    replicator.instanceDelay = 0.2;
-    CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DRotate(transform, M_PI*2/3.0, 0, 0,1);
-    replicator.instanceTransform = transform;
-    
-    replicator.backgroundColor = [UIColor yellowColor].CGColor;
-    [replicator addSublayer:circleLayer];
-    [self.layer addSublayer:replicator];
+    [self.layer addSublayer:replicatorLayer];
 }
+
 
 - (void)setDotsReplicator{
     CGFloat margin = 5;
@@ -207,7 +208,6 @@
     scaleAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DScale(transform, 1.0, 1.0, 0)];
     scaleAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DScale(transform, 0.2, 0.2, 0)];
     
-    
     CABasicAnimation *opacityAniamtion = [CABasicAnimation animationWithKeyPath:@"opacity"];
     opacityAniamtion.fromValue = @1;
     opacityAniamtion.toValue = @0.3;
@@ -220,18 +220,22 @@
     return group;
 }
 
-- (CABasicAnimation *)triangleAnimationTransX:(CGFloat)lenght{
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DTranslate(transform, lenght, 0, 0);
-    transform = CATransform3DRotate(transform,M_PI*2/3.0, 0, 0, 1);
-    animation.toValue = [NSValue valueWithCATransform3D:transform];
-    animation.duration = 0.6;
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    animation.repeatCount = HUGE;
-    return animation;
+- (CABasicAnimation *)rotationAnimation:(CGFloat)transX{
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform"];
+    CATransform3D fromValue = CATransform3DRotate(CATransform3DIdentity, 0.0, 0.0, 0.0, 0.0);
+    scale.fromValue = [NSValue valueWithCATransform3D:fromValue];
     
+    CATransform3D toValue = CATransform3DTranslate(CATransform3DIdentity, transX, 0.0, 0.0);
+    toValue = CATransform3DRotate(toValue,120.0*M_PI/180.0, 0.0, 0.0, 1.0);
+    
+    scale.toValue = [NSValue valueWithCATransform3D:toValue];
+    scale.autoreverses = NO;
+    scale.repeatCount = HUGE;
+    scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    scale.duration = 0.8;
+    return scale;
 }
+
 
 @end
 
